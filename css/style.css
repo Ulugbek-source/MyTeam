@@ -310,6 +310,9 @@ body {
 	.build {
 		flex-direction: column;
 	}
+	.build-title {
+		margin-bottom: 56px;
+	}
 	.build-section {
 		padding: 64px 24px 64px;
 	}
@@ -338,7 +341,7 @@ body {
 }
 .delivery-title-wrap {
 	text-align: center;
-	width: 932px;
+	max-width: 932px;
 	margin: 0 auto;
 }
 .delivery-title {
@@ -360,17 +363,10 @@ body {
 	align-items: center;
 }
 .delivery-card {
-	width: 350px;
-	position: relative;
-}
-.delivery-card-img {
-	position: absolute;
-	top: -31px;
-	left: 138px;
-	z-index: -1;
+	max-width: 350px;
 }
 .delivery-card-text {
-	font-family: Livvic;
+	font-family: 'Livvic';
 	font-weight: 600;
 	font-size: 15px;
 	line-height: 25px;
@@ -396,20 +392,55 @@ body {
 	letter-spacing: 0px;
 	color: white;
 }
+/* Delivery tablet start */
+@media (max-width: 768px) {
+	.deliver {
+		padding: 100px 97px;
+	}
+	.delivery-cards {
+		flex-direction: column;
+		gap: 48px;
+	}
+	.delivery-title {
+		font-family: 'Livvic';
+		font-weight: 700;
+		font-size: 32px;
+		line-height: 32px;
+		letter-spacing: 0px;
+		text-align: center;
+		max-width: 573px;
+	}
+}
+/* Delivery tablet end */
+/* Delivery mobile start */
+@media (max-width: 583px) {
+	.deliver {
+		padding: 140px 24px 164px;
+	}
+	.delivery-cards {
+		margin-top: 48px;
+	}
+	.delivery-title {
+		max-width: 300px;
+		margin: 0 auto;
+	}
+}
+/* Delivery mobile end */
 /* Ready section */
 .ready-section {
 	background-color: #f67e7e;
-	padding: 76px 0;
 	background-image: url('../images/ready-bg-1.svg');
 	background-repeat: no-repeat;
 	background-size: 200px 150px;
-	background-position: left bottom;
+	background-position: left 80px;
 }
 .ready {
 	display: flex;
+	justify-content: space-between;
+	padding: 76px 0;
+	align-items: center;
 }
 .ready-title {
-	margin-left: 80px;
 	font-family: 'Livvic';
 	font-weight: 700;
 	font-size: 48px;
@@ -418,7 +449,6 @@ body {
 	color: #012f34;
 }
 .ready-contact-link {
-	margin-left: 260px;
 	font-family: 'Livvic';
 	padding: 9px 33px 11px 32px;
 	border: 2px solid #012f34;
@@ -438,6 +468,41 @@ body {
 .ready-contact-link:active {
 	background-color: #012f34;
 }
+/* Ready tablet start */
+@media (max-width: 768px) {
+	.ready-section {
+		background-position: left 85px;
+	}
+	.ready {
+		padding: 76px 97px;
+	}
+	.ready-title {
+		font-family: 'Livvic';
+		font-weight: 700;
+		font-size: 32px;
+		line-height: 32px;
+		letter-spacing: 0px;
+		color: #012f34;
+	}
+}
+/* Ready tablet end */
+/* Ready mobile start */
+@media (max-width: 583px) {
+	.ready-section {
+		background-position: left 180px;
+	}
+	.ready {
+		padding: 83px 24px;
+		flex-direction: column;
+		gap: 24px;
+	}
+	.ready-title {
+		max-width: 327px;
+		text-align: center;
+		margin: 0 auto;
+	}
+}
+/* Ready mobile end */
 /* Site footer */
 .site-footer {
 	background-color: #002529;
@@ -510,6 +575,15 @@ body {
 .footer-social-links:hover {
 	transform: scale(1.1);
 }
+/* Footer tablet start */
+@media (max-width: 768px) {
+	.footer {
+		padding: 56px 40px;
+	}
+}
+/* Footer tablet end */
+/* Footer mobile start */
+/* Footer mobile end */
 /* Contact section style */
 .contact-hero-section {
 	padding-bottom: 120px;
