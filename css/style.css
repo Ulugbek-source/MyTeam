@@ -115,7 +115,7 @@ body {
 }
 /* Header tablet end */
 /* Header mobile start */
-@media (max-width: 670px) {
+@media (max-width: 583px) {
 	.site-header {
 		padding: 48px 0 80px;
 	}
@@ -211,10 +211,18 @@ body {
 		padding-bottom: 197px;
 	}
 	.hero-title {
-		margin-bottom: 18px;
+		padding-bottom: 18px;
+		margin: 0 auto;
+		max-width: 327px;
+		text-align: center;
 		font-size: 48px;
 		line-height: 48px;
 		letter-spacing: 0px;
+	}
+	.hero-text-wrapper {
+		margin: 0 auto;
+		padding-bottom: 197px;
+		max-width: 327px;
 	}
 }
 @media (max-width: 391px) {
@@ -414,8 +422,10 @@ body {
 /* Delivery tablet end */
 /* Delivery mobile start */
 @media (max-width: 583px) {
+	.delivery {
+		padding: 140px 0 164px;
+	}
 	.deliver {
-		padding: 140px 24px 164px;
 	}
 	.delivery-cards {
 		margin-top: 48px;
@@ -490,9 +500,9 @@ body {
 @media (max-width: 583px) {
 	.ready-section {
 		background-position: left 180px;
+		padding: 83px 0;
 	}
 	.ready {
-		padding: 83px 24px;
 		flex-direction: column;
 		gap: 24px;
 	}
