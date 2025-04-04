@@ -621,6 +621,11 @@ body {
 	flex-direction: column;
 	gap: 8px;
 }
+.contact-menu-btn {
+	background-color: transparent;
+	border: none;
+	display: none;
+}
 .contact-item {
 	display: flex;
 	align-items: center;
@@ -683,3 +688,40 @@ body {
 	border: none;
 	cursor: pointer;
 }
+/* Contact tablet start */
+@media (max-width: 768px) {
+	.contact-hero {
+		flex-direction: column;
+		gap: 64px;
+	}
+	.contact-hero-content-wrapper {
+		text-align: center;
+		padding: 0 86px 0 86px;
+	}
+	.contact-form {
+		padding: 0 20px 0 20px;
+	}
+	.contact-hero-section {
+		padding-bottom: 113px;
+	}
+}
+/* Contact tablet end */
+/* Contact mobile start */
+@media (max-width: 583px) {
+	.contact-menu-btn {
+		display: block;
+	}
+	.contact-hero-content-wrapper > h2 {
+		margin-bottom: 16px;
+		font-family: 'Livvic';
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 40px;
+		letter-spacing: 0px;
+		text-align: center;
+	}
+	.contact-hero-content-wrapper > p {
+		margin-bottom: 40px;
+	}
+}
+/* Contact mobile end */
