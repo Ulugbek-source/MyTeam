@@ -728,7 +728,9 @@ body {
 	}
 	.contact-hero-content-wrapper {
 		text-align: center;
-		padding: 0 86px 0 86px;
+	}
+	.contact-list {
+		text-align: center;
 	}
 	.contact-form {
 		padding: 0 20px 0 20px;
@@ -746,6 +748,9 @@ body {
 	.contact-hero-section {
 		padding-bottom: 88px;
 	}
+	.contact-hero-content-wrapper {
+		padding: 0;
+	}
 	.contact-menu-btn {
 		display: block;
 	}
@@ -760,9 +765,11 @@ body {
 	}
 	.contact-hero-content-wrapper > p {
 		margin-bottom: 40px;
+		text-align: center;
 	}
 	.contact-list {
 		max-width: 327px;
+		text-align: start;
 	}
 	.contact-form {
 		max-width: 327px;
